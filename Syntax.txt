@@ -1,0 +1,249 @@
+Corrolex-X Full Syntax
+
+1. Basic Syntax
+
+Variable Declarations
+
+int x = 10;           // Integer variable
+float y = 3.14;       // Floating-point variable
+string name = "John"; // String variable
+
+Type Definitions
+
+struct Point {
+    int x;
+    int y;
+};
+
+Functions
+
+func int add(int a, int b) {
+    return a + b;
+}
+
+func void print_hello() {
+    print("Hello, world!");
+}
+
+Control Flow
+
+func void check_even(int number) {
+    if (number % 2 == 0) {
+        print("Even");
+    } else {
+        print("Odd");
+    }
+}
+
+func void loop_example() {
+    int i = 0;
+    while (i < 10) {
+        print(i);
+        i = i + 1;
+    }
+}
+
+2. Advanced Syntax Features
+
+Data Structures
+	•	Arrays
+
+int arr[10]; // Array of integers with size 10
+
+	•	Lists
+
+list<int> numbers = [1, 2, 3, 4, 5];
+
+	•	Tuples
+
+tuple<int, float, string> person = (25, 3.14, "John");
+
+Lambda Functions (Anonymous Functions)
+
+func int multiply_by_two(int a) => a * 2;
+
+func void apply_function(list<int> arr, func int(int) operation) {
+    for (int i = 0; i < arr.length(); i++) {
+        arr[i] = operation(arr[i]);
+    }
+}
+
+Pattern Matching (Destructuring)
+
+tuple<int, string> person = (30, "John");
+
+match person {
+    case (int age, string name):
+        print("Age: " + age);
+        print("Name: " + name);
+    default:
+        print("Unknown data structure");
+}
+
+Generics
+
+func list<T> create_list(int size, T value) {
+    list<T> new_list;
+    for (int i = 0; i < size; i++) {
+        new_list.add(value);
+    }
+    return new_list;
+}
+
+3. Object-Oriented Features
+
+Classes
+
+class Animal {
+    string name;
+
+    func void speak() {
+        print("The animal makes a sound.");
+    }
+}
+
+class Dog extends Animal {
+    func void speak() {
+        print("The dog barks.");
+    }
+}
+
+func void test_classes() {
+    Dog dog;
+    dog.name = "Rex";
+    dog.speak();  // Outputs: The dog barks.
+}
+
+Interfaces and Abstract Classes
+
+interface IShape {
+    func float area();
+    func float perimeter();
+}
+
+class Circle implements IShape {
+    float radius;
+
+    func float area() {
+        return 3.14 * radius * radius;
+    }
+
+    func float perimeter() {
+        return 2 * 3.14 * radius;
+    }
+}
+
+4. Memory Management
+
+Manual Memory Allocation
+
+MemoryBlock* ptr = malloc<MemoryBlock>(10); // Allocate memory for 10 elements
+free(ptr); // Free memory
+
+Garbage Collection (GC)
+
+func void manage_memory() {
+    list<int> numbers = [1, 2, 3];
+    // No need to manually free memory
+}
+
+5. Modules & Imports
+
+Modules
+
+module math;
+
+func int add(int a, int b) {
+    return a + b;
+}
+
+func int multiply(int a, int b) {
+    return a * b;
+}
+
+Importing Modules
+
+import math;
+
+func void use_math() {
+    int result = math.add(5, 10);
+    print(result);  // Outputs: 15
+}
+
+6. Concurrency & Parallelism
+
+Async Functions
+
+async func int fetch_data_from_server() {
+    // Simulate a long-running task
+    return 42;
+}
+
+func void process_data() {
+    int result = fetch_data_from_server();
+    print(result);
+}
+
+7. Exception Handling
+
+Try/Catch Block
+
+func int divide(int a, int b) {
+    if (b == 0) {
+        throw "Division by zero error!";
+    }
+    return a / b;
+}
+
+func void test_divide() {
+    try {
+        int result = divide(10, 0);
+        print(result);
+    } catch (string msg) {
+        print("Error: " + msg);
+    }
+}
+
+8. Direct-Link-Mapping-Table (DLMT)
+
+The DLMT feature allows mapping Corrolex-X syntax constructs directly to assembly or machine code instructions for optimized performance.
+
+// Using Corrolex-X DLMT for optimized assembly code generation
+func int optimized_add(int a, int b) {
+    return a + b;
+}
+
+9. Full Corrolex-X Program Example
+
+module math;
+
+func int add(int a, int b) {
+    return a + b;
+}
+
+func int multiply(int a, int b) {
+    return a * b;
+}
+
+class Calculator {
+    int result;
+
+    func void calculate_sum(int a, int b) {
+        result = add(a, b);
+        print("Sum: " + result);
+    }
+
+    func void calculate_product(int a, int b) {
+        result = multiply(a, b);
+        print("Product: " + result);
+    }
+}
+
+func void main() {
+    Calculator calc;
+    calc.calculate_sum(5, 10); // Sum: 15
+    calc.calculate_product(5, 10); // Product: 50
+}
+
+
+
