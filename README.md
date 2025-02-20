@@ -268,7 +268,7 @@ Compile and run the program with:
 
 License
 
-Corrolex-X is released under the QSRLC License. See LICENSE for more details.
+Corrolex-X is released under the Modified QSRLC License. See LICENSE for more details.
 
 Contributing
 
