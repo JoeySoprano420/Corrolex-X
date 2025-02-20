@@ -1,0 +1,72 @@
+For Corrolex-X, the following file extensions can be used to signify the different types of files associated with the language’s ecosystem, including source code, modules, libraries, configuration files, and specialized files for various stages of development:
+
+1. Source Code File Extensions
+	•	.crx: This is the main file extension for Corrolex-X source code files. These files contain the code written in the Corrolex-X language.
+	•	Example: main.crx
+	•	.crxa: Used for Corrolex-X assembly code, a low-level format that directly maps Corrolex-X constructs to assembly-like instructions or optimized bytecode.
+	•	Example: optimized.crxa
+
+2. Module and Library File Extensions
+	•	.crxm: This extension is used for Corrolex-X modules. These files encapsulate reusable code components, functions, and classes that can be imported into other Corrolex-X programs.
+	•	Example: math.crxm
+	•	.crxl: Used for Corrolex-X library files, which contain collections of standard or third-party libraries, such as utilities or frameworks.
+	•	Example: utils.crxl
+
+3. Compiled Files and Executables
+	•	.crxobj: A compiled object file generated from Corrolex-X source code. It represents an intermediate form of the code before linking.
+	•	Example: main.crxobj
+	•	.crxbin: A binary executable file produced after linking. This is the final form of a Corrolex-X application ready for execution on a specific platform.
+	•	Example: application.crxbin
+
+4. Direct-Link-Mapping-Table (DLMT)
+	•	.dlmt: This extension is used for Direct-Link-Mapping-Table files, which store mapping information between Corrolex-X syntax constructs and corresponding assembly or machine-level code instructions.
+	•	Example: mapping_example.dlmt
+
+5. Configuration and Project Files
+	•	.crxproj: Used for Corrolex-X project files, which contain metadata about the project, such as dependencies, compilation settings, and module information.
+	•	Example: project.crxproj
+	•	.crxconfig: This extension is used for Corrolex-X configuration files, which define global settings, environment variables, or compiler flags for the Corrolex-X environment.
+	•	Example: build.crxconfig
+
+6. Debugging and Profiling Files
+	•	.crxdbg: Used for debugging files that store runtime debugging information such as breakpoints, stack traces, and variable states.
+	•	Example: debug_session.crxdbg
+	•	.crxprof: Profiling files that contain performance metrics like function execution time, memory usage, and CPU load during execution.
+	•	Example: performance_report.crxprof
+
+7. Documentation Files
+	•	.crxdox: This extension is used for documentation files that accompany Corrolex-X projects, describing the codebase, functions, classes, and usage instructions.
+	•	Example: README.crxdox
+
+8. Template Files for Code Generation
+	•	.crxtpl: Template files that help in code generation and scaffolding. They define reusable patterns or structures for auto-generating code.
+	•	Example: module_template.crxtpl
+
+9. Test Files
+	•	.crxtest: Test files that contain unit tests, integration tests, or end-to-end tests for Corrolex-X programs. These files often work with a testing framework built for the language.
+	•	Example: main_test.crxtest
+
+10. Miscellaneous Files
+	•	.crxdata: Used for storing application-specific data, such as configurations, logs, or serialized objects. These are typically read/written by Corrolex-X programs.
+	•	Example: settings.crxdata
+
+Summary of File Extensions
+
+File Type	Extension	Description
+Corrolex-X Source Code	.crx	Source code file written in Corrolex-X.
+Corrolex-X Assembly	.crxa	Low-level assembly code mapping for Corrolex-X.
+Corrolex-X Modules	.crxm	Modules containing reusable code components.
+Corrolex-X Libraries	.crxl	Libraries containing utility or framework code.
+Compiled Object File	.crxobj	Intermediate object file before linking.
+Binary Executable	.crxbin	Final executable file after linking.
+DLMT Mapping Table	.dlmt	Table mapping Corrolex-X syntax to machine code.
+Corrolex-X Project File	.crxproj	Project metadata and configuration file.
+Corrolex-X Configuration File	.crxconfig	Global settings and environment variables.
+Debugging File	.crxdbg	Debugging runtime information file.
+Profiling File	.crxprof	Performance profiling data file.
+Documentation File	.crxdox	Documentation file for describing codebase.
+Template File	.crxtpl	Code generation templates.
+Test File	.crxtest	Unit tests or integration tests for the project.
+Miscellaneous Data File	.crxdata	Application data files for various uses.
+
+These extensions provide a flexible structure for organizing and managing Corrolex-X source code, modules, libraries, compiled artifacts, and other related files, ensuring the Corrolex-X ecosystem supports both large-scale development and efficient deployment.
